@@ -34,7 +34,7 @@ const UpdateUser = () => {
     event.preventDefault();
     console.log(inputUser);
     const res = await axios.put(
-      `http://localhost:5000/updateuser/${id}`,
+      `http://0.0.0.0:5000/updateuser/${id}`,
       inputUser
     );
     console.log(res);
