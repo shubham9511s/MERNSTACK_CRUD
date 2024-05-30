@@ -8,7 +8,7 @@ app.use(cors());
 app.use(express.json());
 // db connection
 mongoose
-  .connect("mongodb://127.0.0.1:27017/mernstack_crud")
+  .connect("mongodb+srv://shubhamssc100:EbFiDLczIbS0nJVe@project0.gystw8r.mongodb.net/project0")
   .then(() => {
     console.log("db connection succesfully");
   })
