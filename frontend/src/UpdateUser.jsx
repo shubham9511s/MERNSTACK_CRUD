@@ -12,7 +12,7 @@ const UpdateUser = () => {
   const { id } = useParams();
   // data fetching single
   const fetchSingleUser = async () => {
-    const res = await axios.get(`http://localhost:5000/read/${id}`);
+    const res = await axios.get(`http://0.0.0.0:5000/read/${id}`);
     console.log(res);
     setInputUser({
       name: res.data.name,
