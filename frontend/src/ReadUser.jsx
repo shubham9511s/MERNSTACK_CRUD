@@ -7,7 +7,7 @@ const ReadUser = () => {
   // data fetching all
   const [userData, setUserData] = useState([]);
   const fetchSingleUser = async () => {
-    const res = await axios.get(`http://localhost:5000/read/${id}`);
+    const res = await axios.get(`http://0.0.0.0:5000/read/${id}`);
     console.log(res);
     setUserData(res.data);
   };
